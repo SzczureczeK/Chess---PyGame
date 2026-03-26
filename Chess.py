@@ -99,7 +99,7 @@ class Piece(pg.sprite.Sprite):
 
     def get_piece_image(self, piece):
         # Load the image and convert it to a format with alpha channel
-        piece_img_path = f"{self.color}_{piece}.png"
+        piece_img_path = f"images/{self.color}_{piece}.png"
         original_piece_img = pg.image.load(piece_img_path).convert_alpha()
         # Determine the scale factor to make the piece fit within the tile,
         # leaving some padding for visual appeal. E.g., 80% of TILESIZE.
